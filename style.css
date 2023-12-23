@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: darkcyan;
+  color: whitesmoke;
+}
+
+.banner {
+  height: 500px;
+
+  background-image: url('images/banner-3.jpeg');
+  background-position: center;
+  background-size: cover;
+
+  /* animation: slideshow 20s infinite; */
+
+  display: grid;
+  place-content: center;
+}
+
+
+/* @keyframes slideshow {
+  0% {
+    background-image: url("./images/banner-1.jpeg");
+  }
+  25% {
+    background-image: url("./images/banner-2.jpeg");
+  }
+  50% {
+    background-image: url("./images/banner-3.jpeg");
+  }
+  75% {
+    background-image: url("./images/banner-4.jpeg");
+  }
+  100% {
+    background-image: url("./images/banner-1.jpeg");
+  }
+} */
+
+.intro {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+
+  transition: all 0.5s;
+
+  /* display: flex;
+  flex-direction: column;
+  gap: 25px; */
+}
+
+.intro:hover {
+  background-color: brown;
+}
+
+.intro h1 {
+  font-size: 64px;
+  color: whitesmoke;
+  letter-spacing: 4px;
+  text-shadow: 0 0 5px whitesmoke;
+}
+
+.intro h2 {
+  font-size: 32px;
+  color: lightgrey;
+}
+
+.intro h3 {
+  font-size: 28px;
+  color: lightcyan;
+}
+
+
+
+/* Product Cards */
+
+#card {
+  padding: 15px;
+}
+
+#card h2 {
+  text-align: center;
+}
+
+.card-group {
+  padding: 15px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.card {
+  border: 4px solid white;
+  box-shadow: 10px 10px 2px brown;
+
+  transition: all 0.5s;
+
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 300px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  font-size: 24px;
+}
+
+.card h4 {
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 16px;
+}
+
+.card-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-description {
+  padding: 15px;
+
+  display: grid;
+}
+
+.btn {
+  border-radius: 10px;
+  border: 1px solid white;
+  font-size: 16px;
+  padding: 15px;
+  font-weight: bold;
+  background-color: brown;
+  color: whitesmoke;
+}
+
+.contact-info {
+  padding: 15px;
+  display: grid;
+  gap: 15px;
+}
+
+input, textarea {
+  display: inline-block;
+  padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.contact-form {
+  display: grid;
+  gap: 15px;
+}
+
+#contact {
+  padding: 25px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+
+.gallery {
+  padding: 15px;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 150px 150px 150px 150px 150px;
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery img:nth-child(1) {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+.gallery img:nth-child(2) {
+  grid-column: 3 / 5;
+  grid-row: 1 / 3;
+}
+
+.gallery img:nth-child(3) {
+  grid-column: 1 / 3;
+  grid-row: 3 / 5;
+}
+
+.gallery img:nth-child(4) {
+  grid-column: 3 / 5;
+  grid-row: 3 / 5;
+}
+
+.gallery img:nth-child(5) {
+  grid-column: 1 / 5;
+  grid-row: 5 / 6;
+}
+
+.gallery img:nth-child(6) {
+  grid-column: 5 / 6;
+  grid-row: 1  / 6;
+}
+
+
+footer {
+  padding: 25px;
+  background-color: lightslategray;
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+
